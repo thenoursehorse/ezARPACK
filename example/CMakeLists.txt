@@ -13,11 +13,11 @@ set(EXAMPLES)
 # Set the DT_RPATH attribute instead of DT_RUNPATH on executables
 add_link_options(-Wl,--disable-new-dtags)
 
-# Raw memory example
-set(t "raw.example")
-add_raw_executable(${t} ${t}.cpp)
-target_link_libraries(${t} PRIVATE ${ARPACK_LIBRARIES})
-list(APPEND EXAMPLES ${t})
+## Raw memory example
+#set(t "raw.example")
+#add_raw_executable(${t} ${t}.cpp)
+#target_link_libraries(${t} PRIVATE ${ARPACK_LIBRARIES})
+#list(APPEND EXAMPLES ${t})
 
 # Eigen3 example
 if(EIGEN3_FOUND)

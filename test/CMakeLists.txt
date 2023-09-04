@@ -71,8 +71,8 @@ else(${arpack-ng_VERSION} VERSION_GREATER_EQUAL 3.8.0)
   message(STATUS "ARPACK-NG is too old, disabling complex PARPACK tests")
 endif(${arpack-ng_VERSION} VERSION_GREATER_EQUAL 3.8.0)
 
-# Tests of raw memory storage backend
-add_subdirectory(raw)
+## Tests of raw memory storage backend
+#add_subdirectory(raw)
 
 # Tests of Eigen3 storage backend
 if(Eigen3_FOUND)

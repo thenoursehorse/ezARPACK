@@ -11,11 +11,11 @@
 include_directories(${MPI_CXX_INCLUDE_PATH})
 link_libraries(${MPI_CXX_LIBRARIES})
 
-# Raw memory example
-set(t "raw.mpi.example")
-add_raw_executable(${t} ${t}.cpp)
-target_link_libraries(${t} PRIVATE ${PARPACK_LIBRARIES})
-list(APPEND EXAMPLES ${t})
+## Raw memory example
+#set(t "raw.mpi.example")
+#add_raw_executable(${t} ${t}.cpp)
+#target_link_libraries(${t} PRIVATE ${PARPACK_LIBRARIES})
+#list(APPEND EXAMPLES ${t})
 
 # Eigen3 example
 if(EIGEN3_FOUND)
